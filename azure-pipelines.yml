@@ -19,7 +19,7 @@ variables:
   imagePullSecret: 'wesbdevsciot9471-auth'
 
   # Agent VM image name
-  vmImageName: 'ubuntu-latest'
+  vmImageName: 'ubuntu-16.04'
   
   # Name of the new namespace being created to deploy the PR changes.
   k8sNamespaceForPR: '$(system.pullRequest.sourceBranch)'
