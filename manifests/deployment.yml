@@ -1,0 +1,16 @@
+apiVersion : apps/v1beta1
+kind: Deployment
+metadata:
+  name: anirvankpipelinesjavascriptdocker 
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: anirvankpipelinesjavascriptdocker 
+    spec:
+      containers:
+        - name: anirvankpipelinesjavascriptdocker 
+          image: wesbdevsciot.azurecr.io/anirvankpipelinesjavascriptdocker
+          ports:
+          - containerPort: 8080
